@@ -136,8 +136,15 @@ nav a{
 
 main section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #161717;
+}
+@media (max-width:750px){
+    main section{
+        display: flex;
+        flex-direction: column;
+        background-color: #161717;
+    }
 }
 
 main section div{
