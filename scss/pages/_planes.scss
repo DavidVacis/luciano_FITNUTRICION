@@ -1,0 +1,69 @@
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #161717;
+}
+
+@media (max-width: 1200px) {
+    main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #161717;
+    }
+}
+
+main section div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/fondo_planes.jpg");
+    margin: 1rem;
+    border-radius: 30px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+
+    h3 {
+        width: 100%;
+        font-size: 30px;
+        background-color: #161717;
+        border-radius: 30px;
+        color: #DA36BC;
+        padding: 10px;
+    }
+
+    h2 {
+        color: black;
+        font-size: 3rem;
+        background-color: #35E87A;
+        border-radius: 30px;
+        border: 1.5rem solid #35E87A;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #161717;
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+
+        li {
+            padding: 5px;
+            list-style: inside;
+        }
+    }
+}
