@@ -1,30 +1,160 @@
 body {
-    margin: 0;
-    padding: 0; }
-  
-  .portada {
+  margin: 0;
+  padding: 0; }
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+  background-image: url(../img/portada.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .portada h2 {
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal; }
+  .portada h1 {
+    color: white;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-size: 150px;
+    font-weight: 600;
+    font-style: normal; }
+  .portada button {
+    border-color: #FFE500;
+    border-radius: 7%;
+    background-color: #FFE500;
+    padding: 10px 20px;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    font-weight: 50;
+    font-style: normal; }
+
+.presentacion {
+  display: flex; }
+  .presentacion .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 750px;
-    background-image: url(../img/portada.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat; }
-    .portada h2 {
+    background-color: black;
+    width: 50%;
+    padding: 50px; }
+    .presentacion .contenedor h2 {
       color: white;
       font-family: "Anton", sans-serif;
-      font-weight: 400;
+      font-size: 50px;
+      font-weight: 100;
       font-style: normal; }
-    .portada h1 {
+    .presentacion .contenedor p {
       color: white;
+      font-size: 25px;
+      text-align: left;
+      font-family: "Madimi One", sans-serif;
+      font-weight: 100;
+      font-style: normal; }
+    .presentacion .contenedor .redes ul {
+      justify-content: center;
+      list-style: none;
+      display: flex; }
+  .presentacion img {
+    width: 50%; }
+
+.servicios {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 50PX; }
+  .servicios h3 {
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 50px; }
+  .servicios .contenedor_cards {
+    display: flex;
+    justify-content: space-around; }
+    .servicios .contenedor_cards .card {
+      background-color: black; }
+    .servicios .contenedor_cards .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: #FFE500; }
+    .servicios .contenedor_cards .card-title {
+      font-family: "Anton", sans-serif;
+      font-size: 30px;
+      font-weight: 100;
+      font-style: normal; }
+    .servicios .contenedor_cards .card-text {
       text-align: center;
-      font-family: "Anton", sans-serif;
-      font-size: 150px;
-      font-weight: 600;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 15px;
       font-style: normal; }
-    .portada button {
+    .servicios .contenedor_cards .btn {
+      font-family: "Madimi One", sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+      font-style: normal; }
+
+.preguntas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px; }
+  .preguntas .redes {
+    display: flex;
+    width: 50%;
+    background-image: url(../img/preguntas.jpeg);
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+    padding: 50px; }
+    .preguntas .redes ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      list-style: none; }
+      .preguntas .redes ul li {
+        justify-content: space-around; }
+        .preguntas .redes ul li img {
+          height: 100px;
+          margin: 20px; }
+  .preguntas .contenedor_preguntas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: black; }
+    .preguntas .contenedor_preguntas .accordion-item {
+      border-color: black;
+      background-color: white; }
+    .preguntas .contenedor_preguntas h3 {
+      color: white;
+      font-family: "Anton", sans-serif;
+      font-size: 50px;
+      font-weight: 100;
+      font-style: normal; }
+    .preguntas .contenedor_preguntas .accordion-button {
+      color: black !important;
+      background-color: #FFE500;
+      border-radius: 0px;
+      font-family: "Anton", sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+      font-style: normal; }
+    .preguntas .contenedor_preguntas .accordion-body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px; }
+    .preguntas .contenedor_preguntas button {
       border-color: #FFE500;
       border-radius: 7%;
       background-color: #FFE500;
@@ -33,209 +163,78 @@ body {
       font-size: 20px;
       font-weight: 50;
       font-style: normal; }
-  
-  .presentacion {
-    display: flex; }
-    .presentacion .contenedor {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: black;
-      width: 50%;
-      padding: 50px; }
-      .presentacion .contenedor h2 {
-        color: white;
-        font-family: "Anton", sans-serif;
-        font-size: 50px;
-        font-weight: 100;
-        font-style: normal; }
-      .presentacion .contenedor p {
-        color: white;
-        font-size: 25px;
-        text-align: left;
-        font-family: "Madimi One", sans-serif;
-        font-weight: 100;
-        font-style: normal; }
-      .presentacion .contenedor .redes ul {
-        justify-content: center;
-        list-style: none;
-        display: flex; }
-    .presentacion img {
-      width: 50%; }
-  
-  .servicios {
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    padding: 50PX; }
-    .servicios h3 {
-      color: white;
+
+.cambios {
+  background-image: url(../img/cambios2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+  .cambios h3 {
+    color: #FFE500;
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: normal; }
+  .cambios p {
+    font-family: "Anton", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: white; }
+  .cambios .cont_carrucel {
+    width: 500px;
+    height: 500px; }
+    .cambios .cont_carrucel h5 {
       font-family: "Anton", sans-serif;
       font-size: 50px;
       font-weight: 100;
       font-style: normal;
-      text-align: center;
-      margin-bottom: 50px; }
-    .servicios .contenedor_cards {
-      display: flex;
-      justify-content: space-around; }
-      .servicios .contenedor_cards .card {
-        background-color: black; }
-      .servicios .contenedor_cards .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #FFE500; }
-      .servicios .contenedor_cards .card-title {
-        font-family: "Anton", sans-serif;
-        font-size: 30px;
-        font-weight: 100;
-        font-style: normal; }
-      .servicios .contenedor_cards .card-text {
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 15px;
-        font-style: normal; }
-      .servicios .contenedor_cards .btn {
-        font-family: "Madimi One", sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-        font-style: normal; }
-  
-  .preguntas {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 700px; }
-    .preguntas .redes {
-      display: flex;
-      width: 50%;
-      background-image: url(../img/preguntas.jpeg);
-      background-position: center;
-      justify-content: center;
-      align-items: end;
-      padding: 50px; }
-      .preguntas .redes ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        list-style: none; }
-        .preguntas .redes ul li {
-          justify-content: space-around; }
-          .preguntas .redes ul li img {
-            height: 100px;
-            margin: 20px; }
-    .preguntas .contenedor_preguntas {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      padding: 50px;
-      background-color: black; }
-      .preguntas .contenedor_preguntas .accordion-item {
-        border-color: black;
-        background-color: white; }
-      .preguntas .contenedor_preguntas h3 {
-        color: white;
-        font-family: "Anton", sans-serif;
-        font-size: 50px;
-        font-weight: 100;
-        font-style: normal; }
-      .preguntas .contenedor_preguntas .accordion-button {
-        color: black !important;
-        background-color: #FFE500;
-        border-radius: 0px;
-        font-family: "Anton", sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-        font-style: normal; }
-      .preguntas .contenedor_preguntas .accordion-body {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px; }
-      .preguntas .contenedor_preguntas button {
-        border-color: #FFE500;
-        border-radius: 7%;
-        background-color: #FFE500;
-        padding: 10px 20px;
-        font-family: "Anton", sans-serif;
-        font-size: 20px;
-        font-weight: 50;
-        font-style: normal; }
-  
-  .cambios {
-    background-image: url(../img/cambios2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px; }
-    .cambios h3 {
       color: #FFE500;
+      background-color: rgba(0, 0, 0, 0.384); }
+    .cambios .cont_carrucel p {
+      color: #FFE500;
+      background-color: rgba(0, 0, 0, 0.664);
+      font-size: 20px; }
+
+footer {
+  display: flex;
+  height: auto;
+  background-color: black; }
+  footer .form {
+    width: 50%;
+    padding: 50px; }
+    footer .form h3 {
+      color: white;
       font-family: "Anton", sans-serif;
       font-size: 50px;
       font-weight: 100;
       font-style: normal; }
-    .cambios p {
+    footer .form label {
+      color: #FFE500;
       font-family: "Anton", sans-serif;
-      font-weight: 100;
-      font-size: 40px;
-      color: white; }
-    .cambios .cont_carrucel {
-      width: 500px;
-      height: 500px; }
-      .cambios .cont_carrucel h5 {
-        font-family: "Anton", sans-serif;
-        font-size: 50px;
-        font-weight: 100;
-        font-style: normal;
-        color: #FFE500;
-        background-color: rgba(0, 0, 0, 0.384); }
-      .cambios .cont_carrucel p {
-        color: #FFE500;
-        background-color: rgba(0, 0, 0, 0.664);
-        font-size: 20px; }
-  
-  footer {
+      font-size: 20px; }
+  footer .redes {
     display: flex;
-    height: auto;
-    background-color: black; }
-    footer .form {
-      width: 50%;
-      padding: 50px; }
-      footer .form h3 {
-        color: white;
-        font-family: "Anton", sans-serif;
-        font-size: 50px;
-        font-weight: 100;
-        font-style: normal; }
-      footer .form label {
-        color: #FFE500;
-        font-family: "Anton", sans-serif;
-        font-size: 20px; }
-    footer .redes {
+    width: 50%;
+    background-image: url(../img/form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    padding: 50px; }
+    footer .redes ul {
       display: flex;
-      width: 50%;
-      background-image: url(../img/form.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      margin: 0;
+      padding: 0;
       justify-content: center;
-      align-items: end;
-      padding: 50px; }
-      footer .redes ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        list-style: none; }
-        footer .redes ul li {
-          justify-content: space-around; }
-          footer .redes ul li img {
-            height: 100px;
-            margin: 20px; }
-  
+      list-style: none; }
+      footer .redes ul li {
+        justify-content: space-around; }
+        footer .redes ul li img {
+          height: 100px;
+          margin: 20px; }
