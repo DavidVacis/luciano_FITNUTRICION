@@ -97,7 +97,7 @@ body {
     .presentacion .contenedor {
       width: 100%; }
       .presentacion .contenedor .redes ul img {
-        width: 100px; }
+        width: 80px; }
     .presentacion div {
       width: 100%; } }
 
@@ -226,7 +226,7 @@ body {
       background-color: black;
       align-items: center; }
       .preguntas .redes ul li img {
-        height: 100px; }
+        height: 80px; }
     .preguntas .contenedor_preguntas {
       width: 100%; }
       .preguntas .contenedor_preguntas a {
@@ -274,8 +274,11 @@ body {
     .cambios h3 {
       background-color: rgba(0, 0, 0, 0.637); }
     .cambios .cont_carrucel {
-      max-width: 100%;
-      padding: 20px; } }
+      width: 90%;
+      padding: 20px; }
+      .cambios .cont_carrucel .carousel-item img {
+        height: 350px;
+        width: 350px; } }
 
 footer {
   display: flex;
@@ -324,4 +327,6 @@ footer {
     footer .redes {
       width: 100%;
       padding: 0;
-      background-image: none; } }
+      background-image: none; }
+      footer .redes ul img {
+        width: 80px; } }

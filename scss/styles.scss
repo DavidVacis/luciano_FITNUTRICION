@@ -138,7 +138,7 @@ body {
             .redes {
                 ul {
                     img {
-                        width: 100px;
+                        width: 80px;
                     }
                 }
             }
@@ -262,8 +262,6 @@ body {
                     margin: 20px;
                 }
             }
-
-            ;
         }
     }
 
@@ -332,7 +330,7 @@ body {
             ul {
                 li {
                     img {
-                        height: 100px;
+                        height: 80px;
                     }
                 }
             }
@@ -404,7 +402,7 @@ body {
             background-color: rgba(0, 0, 0, 0.637);
         }
         .cont_carrucel{
-            max-width: 90%;
+            width: 90%;
             padding: 20px;
             .carousel-item {
                 img{
@@ -480,8 +478,13 @@ footer {
         }
         .redes{
             width: 100%;
-            padding: 0;
+            padding:0;
             background-image: none;
+            ul{
+                img{
+                    width: 80px;
+                }
+            }
         }
     }
 }
