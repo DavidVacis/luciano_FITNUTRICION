@@ -100,11 +100,15 @@ body {
             padding: 0;
 
             ul {
-                justify-content: space-between;
+                justify-content: center;
                 list-style: none;
                 padding: 0;
                 width: 100%;
                 display: flex;
+                img{
+                    width: 100px;
+                    margin: 20px;
+                }
             }
         }
     }
@@ -134,7 +138,7 @@ body {
             .redes {
                 ul {
                     img {
-                        width: 70px;
+                        width: 100px;
                     }
                 }
             }
@@ -328,7 +332,7 @@ body {
             ul {
                 li {
                     img {
-                        height: 70px;
+                        height: 100px;
                     }
                 }
             }
@@ -394,6 +398,16 @@ body {
 }
 
 @media screen and (max-width: 1100px){
+    .cambios {
+        padding: 20px;
+        h3{
+            background-color: rgba(0, 0, 0, 0.637);
+        }
+        .cont_carrucel{
+            max-width: 90%;
+            padding: 20px;
+        }
+    }
 
 }
 
