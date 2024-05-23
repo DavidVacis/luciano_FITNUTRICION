@@ -214,6 +214,8 @@ body {
       font-size: 20px;
       font-weight: 50;
       font-style: normal; }
+    .preguntas .contenedor_preguntas a {
+      margin-top: 20px; }
 
 @media screen and (max-width: 1100px) {
   .preguntas {
