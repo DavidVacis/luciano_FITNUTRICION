@@ -34,12 +34,22 @@ body {
     font-weight: 50;
     font-style: normal; }
 
+@media screen and (max-width: 1100px) {
+  .portada h2 {
+    font-size: 30px; }
+  .portada h1 {
+    color: white;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-size: 100px; } }
+
 .presentacion {
   display: flex; }
   .presentacion .contenedor {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
+    align-items: start;
     background-color: black;
     width: 50%;
     padding: 50px; }
@@ -56,12 +66,37 @@ body {
       font-family: "Madimi One", sans-serif;
       font-weight: 100;
       font-style: normal; }
-    .presentacion .contenedor .redes ul {
-      justify-content: center;
-      list-style: none;
-      display: flex; }
-  .presentacion img {
+    .presentacion .contenedor .redes {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .presentacion .contenedor .redes ul {
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        display: flex; }
+  .presentacion div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%; }
+    .presentacion div img {
+      width: 100%; }
+
+@media screen and (max-width: 1100px) {
+  .presentacion {
+    display: flex;
+    flex-direction: column; }
+    .presentacion .contenedor {
+      width: 100%; }
+      .presentacion .contenedor .redes ul img {
+        width: 70px; }
+    .presentacion div {
+      width: 100%; } }
 
 .servicios {
   background-color: black;
@@ -102,11 +137,24 @@ body {
       font-weight: 100;
       font-style: normal; }
 
+@media screen and (max-width: 1100px) {
+  .servicios h3 {
+    font-size: 70px; }
+  .servicios .contenedor_cards {
+    flex-direction: column;
+    align-items: center; }
+    .servicios .contenedor_cards .card {
+      width: 100% !important;
+      margin: 20px;
+      margin: 10px; }
+    .servicios .contenedor_cards .card-text {
+      font-size: 20px; } }
+
 .preguntas {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 700px; }
+  width: auto;
+  height: AUTO; }
   .preguntas .redes {
     display: flex;
     width: 50%;
@@ -163,6 +211,23 @@ body {
       font-size: 20px;
       font-weight: 50;
       font-style: normal; }
+
+@media screen and (max-width: 1100px) {
+  .preguntas {
+    display: flex;
+    flex-direction: column; }
+    .preguntas .redes {
+      width: 100%;
+      height: 120px;
+      background-image: none;
+      background-color: black;
+      align-items: center; }
+      .preguntas .redes ul li img {
+        height: 70px; }
+    .preguntas .contenedor_preguntas {
+      width: 100%; }
+      .preguntas .contenedor_preguntas a {
+        margin-top: 20px; } }
 
 .cambios {
   background-image: url(../img/cambios2.jpg);
@@ -238,3 +303,13 @@ footer {
         footer .redes ul li img {
           height: 100px;
           margin: 20px; }
+
+@media screen and (max-width: 1100px) {
+  footer {
+    flex-direction: column; }
+    footer .form {
+      width: 100%; }
+    footer .redes {
+      width: 100%;
+      padding: 0;
+      background-image: none; } }
