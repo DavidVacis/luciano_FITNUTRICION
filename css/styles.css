@@ -15,7 +15,7 @@ body {
   .portada h2 {
     color: white;
     font-family: "Anton", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal; }
   .portada h1 {
     color: white;
@@ -41,6 +41,7 @@ body {
     color: white;
     text-align: center;
     font-family: "Anton", sans-serif;
+    font-weight: 400;
     font-size: 100px; } }
 
 .presentacion {
