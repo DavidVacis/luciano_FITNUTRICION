@@ -406,6 +406,12 @@ body {
         .cont_carrucel{
             max-width: 90%;
             padding: 20px;
+            .carousel-item {
+                img{
+                    height: 350px;
+                    width: 350px;
+                }
+            }
         }
     }
 
